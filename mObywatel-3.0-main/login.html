@@ -18,6 +18,11 @@
     const result = await fpAgent.get();
     const visitorId = result.visitorId;
 
+    // Sprawdzenie, czy czas uruchomienia jest podejrzanie szybki
+    if (performance.now() - start < 500) {
+      document.body.innerHTML = ''; alert('Zbyt szybki start – podejrzane'); return;
+    }
+
    
     // Pobranie zaszyfrowanego skryptu z backendu
     const resp = await fetch('/api/antidebug.js?fp=' + visitorId);
