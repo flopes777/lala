@@ -3,7 +3,7 @@ import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
   'https://perlstlhcuyahpvnvmeh.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBlcmxzdGxoY3V5YWhwdm52bWVoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1ODE0ODI2NywiZXhwIjoyMDczNzI0MjY3fQ.O-dDnnB8HhMHkIyoVBsXsaO62WJXhb6uYv3YWvpQgYI'
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBlcmxzdGxoY3V5YWhwdm52bWVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgxNDgyNjcsImV4cCI6MjA3MzcyNDI2N30.SlI3oLV9tNBoaXxgjzz5p573zwIx8ovQwq2wgNp-hH0'
 );
 
 const guildId = '1344430123272900700'; // <- ID twojego serwera
