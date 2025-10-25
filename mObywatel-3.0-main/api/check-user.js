@@ -5,7 +5,7 @@ const supabase = createClient(
   ''
 );
 
-const CLIENT_ROLE_ID = '';
+const CLIENT_ROLE_ID = '1365412739941666887';
 
 export default async function handler(req, res) {
   const discord_id = req.query.discord_id;
