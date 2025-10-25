@@ -2,11 +2,11 @@
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
-  '',
-  ''
+  'https://perlstlhcuyahpvnvmeh.supabase.co',
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBlcmxzdGxoY3V5YWhwdm52bWVoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1ODE0ODI2NywiZXhwIjoyMDczNzI0MjY3fQ.O-dDnnB8HhMHkIyoVBsXsaO62WJXhb6uYv3YWvpQgYI'
 );
 
-const guildId = ''; // <- ID twojego serwera
+const guildId = '1344430123272900700'; // <- ID twojego serwera
 const botToken = process.env.DISCORD_BOT_TOKEN; // <- Dodaj do .env lub wpisz ręcznie (jeśli testujesz)
 
 export default async function handler(req, res) {
@@ -23,7 +23,7 @@ export default async function handler(req, res) {
         client_secret: process.env.DISCORD_CLIENT_SECRET,
         grant_type: 'authorization_code',
         code,
-        redirect_uri: ''
+        redirect_uri: 'https://lala-bice.vercel.app/login.html'
       })      
     });
 
