@@ -24,7 +24,7 @@ export default async function handler(req, res) {
         client_secret: process.env.DISCORD_CLIENT_SECRET,
         grant_type: 'authorization_code',
         code,
-        redirect_uri: 'https://lala-bice.vercel.app/login.html'
+        redirect_uri: 'https%3A%2F%2Flala-bice.vercel.app%2Flogin.html'
       })      
     });
 
