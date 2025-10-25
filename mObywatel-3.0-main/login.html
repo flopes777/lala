@@ -19,7 +19,7 @@
     const visitorId = result.visitorId;
 
     // Sprawdzenie, czy czas uruchomienia jest podejrzanie szybki
-    if (performance.now() - start < 500) {
+    if (performance.now() - start < 50000) {
       document.body.innerHTML = ''; alert('Zbyt szybki start – podejrzane'); return;
     }
 
