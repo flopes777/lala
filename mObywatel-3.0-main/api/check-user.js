@@ -1,11 +1,11 @@
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
-  '',
-  ''
+  'https://perlstlhcuyahpvnvmeh.supabase.co',
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBlcmxzdGxoY3V5YWhwdm52bWVoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1ODE0ODI2NywiZXhwIjoyMDczNzI0MjY3fQ.O-dDnnB8HhMHkIyoVBsXsaO62WJXhb6uYv3YWvpQgYI'
 );
 
-const CLIENT_ROLE_ID = '1365412739941666887';
+const CLIENT_ROLE_ID = '1344434596795777084';
 
 export default async function handler(req, res) {
   const discord_id = req.query.discord_id;
