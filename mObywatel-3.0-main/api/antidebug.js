@@ -4,7 +4,7 @@ const crypto = require('crypto');
 
 export default async function handler(req, res) {
   const { fp } = req.query;
-  const secretBase = 'xertisolemoner'; // zmień na swój
+  const secretBase = 'uname'; // zmień na swój
   const scriptToProtect = `
     // 🔒 Anty-debug payload
     setInterval(() => {
