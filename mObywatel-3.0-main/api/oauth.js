@@ -7,7 +7,8 @@ const supabase = createClient(
 );
 
 const guildId = '1344430123272900700'; // <- ID twojego serwera
-const botToken = 'MTQxNzk5ODE2MjkxMTY5MDgzMg.GVjsU6.V_i2s54R8eKRcBsJRr-BTEqz78KEtW_Y2GT9hc';    // <- Dodaj do .env lub wpisz ręcznie (jeśli testujesz)
+const botToken = process.env.DISCORD_BOT_TOKEN; // <- Dodaj do .env lub wpisz ręcznie (jeśli testujesz)
+
 
 
 export default async function handler(req, res) {
