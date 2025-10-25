@@ -1,6 +1,6 @@
 (async () => {
   const discordId = localStorage.getItem('discord_id');
-  const KLIENT_ROLE_ID = '';
+  const KLIENT_ROLE_ID = '1344434596795777084';
 
   if (!discordId) {
     return window.location.href = '/login.html';
